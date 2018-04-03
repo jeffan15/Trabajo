@@ -123,3 +123,16 @@ int main(){
         }
         return 0;
 }
+int main(){
+	int a=1;
+	int b=0;
+	int n;
+	cin>>n;
+	while(b<n){
+		a=a+b;
+		cout<<a<<endl;
+		b=a+b;
+		cout<<b<<endl;
+	}
+	return 0
+}
