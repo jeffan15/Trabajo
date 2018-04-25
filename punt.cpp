@@ -14,12 +14,12 @@ int sum(const int array[],const int lenght{
         return array[lenght-1]+sum(array,lenght-1);
 }
 int invertir(int array[],const int lenght){
-    for(int i=0;i<(lenght-1)/2;i++){
-        int a=array[1];
-        array[i]=array[lenght-1-i];
-        array[lenght-1-i]=a;
+    int=a;
+    for(int i=0;i<lenght-1;i++;lenght--){
+        a=array[1];
+        array[i]=array[lenght-1];
+        array[lenght-1]=a;
     }
-    return a
 }
 void tamCadena(char cad[],char m[]){
     int tam=0;
