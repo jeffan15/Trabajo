@@ -6,14 +6,14 @@ int first(int prime[];int lenght){
     for(int i=0;i<length;sum+=prime[i++]);
     return suma;
 }
-int sum(const int array[],const int lenght{
+int sum(const int array[],int lenght{
     long sum=0;
     if(int lenght==array[0])
         return long sum=array[0];
     else
         return array[lenght-1]+sum(array,lenght-1);
 }
-int invertir(int array[],const int lenght){
+int invertir(int array[],int lenght){
     int=a;
     for(int i=0;i<lenght-1;i++;lenght--){
         a=array[1];
