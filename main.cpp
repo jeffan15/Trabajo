@@ -4,51 +4,67 @@ using namespace std;
 
 int main()
 {
-    cout << "Hello world!" << endl;
-    return 0;
-}
-void 1(){
-    int a=1000;
-    int suma=0;
-    for(int i=1;i<a;i++){
-        if(!(i%3)||!(i%5))
-            suma=suma+i;
-    }
-    cout<<suma<<endl;
-}
-int 2(){
-    int total = 0;
-	int x = 1;
-	int y = 2;
-	int z = 0;
-	while (y <= 4000000){
-		z = x + y;
-		if (y%2==0)
-			total+=y;
-		x=y;
-		y=z;
-	}
-	cout<<total<<endl;
-	return 0;
-}
-int 3(){
-    long long greaterFactor = 600851475143;
-
-    for (long long i = 3; i <= greaterFactor; i += 2)
-    {
-        if (greaterFactor % i == 0)
-        {
-            if (greaterFactor / i >= i)
-            {
-                greaterFactor /= i;
-                i -= 2;
-            }
+    //problema 2
+    int i;
+    int ndp;
+    cout << "N=";
+    cin >> ndp;
+    for (i=0;i<=ndp;i=i+1){
+        if (i%2==0){
+            cout << i;
+            cout << ",";
         }
     }
 
-    cout << "The largest prime factor of the number 600851475143 is:\n" << greaterFactor << endl;
-    return 0;
-}
-int 4(){
+    cout << endl;
+    //problema 3
+    int f1=1;
+    int f2=1;
+    int f3=1;
+    int valor, contador=3;
+    cout << "ingresa la cantidad de numeros fibonnacci" << endl;
+    cin >> valor;
+    cout << f1 << "," << f2 << ",";
+    while (valor>=contador){
+        f3=f2+f1;
+        contador++;
+        f1=f2;
+        f2=f3;
+        cout << f3 << ",";
+    }
+    cout << endl;
+    //problema 4
+    /*int x;
+    int ndperfectos;
+    cout << "ingrese el numero de numeros perfectos" << endl;
+    cin >> ndperfectos;
+    for (x=0; x<=ndperfectos; i=i+1){
+        if (ndperfectos%x=0){
+            cout << x << ",";
+        }
+    }*/
+    /*int x;
+    int y;
+    cin >> y;
+    for (x=0; x<=10; x++){
+        if (y%x==0){
+            cout << x << endl;
+        }
+    }*/
+    //problema 5
+    int r;
+    int suma=0;
+    int ndprimos;
+    cout << "ingresa la cantidad de primos" << endl;
+    cin >> ndprimos;
+    cout << "2,3,5,7,";
+    for (r=0;r<=4*ndprimos;r=r+1){
+        if (r%2!=0 && r%3!=0 && r%5!=0 && r%7!=0){
+            suma=suma+r;
+        }
+    }
+    cout << endl;
+    cout << (2+3+5+7)+suma;
 
+    return 0;
 }
