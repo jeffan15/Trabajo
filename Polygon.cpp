@@ -5,7 +5,7 @@ Polygon::Polygon(int x,int y)
     widht=x;
     height=y;
 }
-Polygon::printArea()
+void Polygon::printArea()
 {
     cout<<this->area()<<'\n';
 }
